@@ -3,3 +3,28 @@ body{
     color: white;
     font-family: 'Overpass', sans-serif;
 }
+
+section{
+    background-color: hsl(213, 19%, 18%);
+}
+
+p{
+    color: hsl(217, 12%, 63%);
+}
+
+#selected{
+    color: hsl(25, 97%, 53%);
+}
+
+#one, #two, #three, #four, #five{
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+}
+
+#submit{
+    background-color: hsl(25, 97%, 53%);
+}
+
+/*#thankYouState{
+    display: none;
+}*/
