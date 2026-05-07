@@ -4,27 +4,65 @@ body{
     font-family: 'Overpass', sans-serif;
 }
 
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 section{
     background-color: hsl(213, 19%, 18%);
+    padding: 15px;
+    border-radius: 15px;
 }
 
 p{
     color: hsl(217, 12%, 63%);
 }
 
+button{
+    border: none;
+    border-radius: 10px;
+    font-family: 'Overpass', sans-serif;
+}
+
+button:hover{
+    color: hsl(216, 12%, 8%);
+    cursor: pointer;
+}
+
 #selected{
     color: hsl(25, 97%, 53%);
 }
 
-#one, #two, #three, #four, #five{
+#one:enabled, #two:enabled, #three:enabled, #four:enabled, #five:enabled{
     background-color: hsl(213, 19%, 18%);
     color: hsl(217, 12%, 63%);
+}
+
+#one:hover, #two:hover, #three:hover, #four:hover, #five:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(216, 12%, 8%);
+}
+
+#one:disabled, #two:disabled, #three:disabled, #four:disabled, #five:disabled{
+    background-color: hsl(0, 100%, 100%);
+    color: hsl(216, 12%, 8%);
 }
 
 #submit{
     background-color: hsl(25, 97%, 53%);
 }
 
-/*#thankYouState{
+#submit:hover{
+    background-color: hsl(0, 100%, 100%);
+}
+
+#rateState{
+    display: block;
+}
+
+#thankYouState{
     display: none;
-}*/
+}
