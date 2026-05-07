@@ -17,7 +17,7 @@ section{
 }
 
 header{
-    padding: 15px;
+    padding: 0 15px 0 15px;
 }
 
 p{
@@ -35,11 +35,14 @@ button:hover{
     cursor: pointer;
 }
 
-#star{
+svg{
+    margin-left: 15px;
+}
+
+/*#star{
     background-color: hsl(215, 14%, 34%);
     padding: 10px;
-    border-radius: 50%;
-}
+}*/
 
 #selected{
     color: hsl(25, 97%, 53%);
@@ -47,7 +50,7 @@ button:hover{
 
 #buttons{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 40px;
 }
 
@@ -77,8 +80,9 @@ button:hover{
 
 #submit{
     background-color: hsl(25, 97%, 53%);
+    font-weight: 700;
     border-radius: 50px;
-    width: 85%;
+    width: 90%;
     height: 40px;
     display: block;
     margin: auto;
