@@ -14,7 +14,10 @@ main{
 section{
     background-color: hsl(213, 19%, 18%);
     padding: 15px;
-    border-radius: 15px;
+}
+
+header{
+    padding: 15px;
 }
 
 p{
@@ -23,8 +26,8 @@ p{
 
 button{
     border: none;
-    border-radius: 10px;
     font-family: 'Overpass', sans-serif;
+    font-size: 15px;
 }
 
 button:hover{
@@ -32,12 +35,33 @@ button:hover{
     cursor: pointer;
 }
 
+#star{
+    background-color: hsl(215, 14%, 34%);
+    padding: 10px;
+    border-radius: 50%;
+}
+
 #selected{
     color: hsl(25, 97%, 53%);
 }
 
+#buttons{
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+}
+
+#one, #two, #three, #four, #five{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #one:enabled, #two:enabled, #three:enabled, #four:enabled, #five:enabled{
-    background-color: hsl(213, 19%, 18%);
+    background-color: hsl(215, 14%, 34%);
     color: hsl(217, 12%, 63%);
 }
 
@@ -53,6 +77,11 @@ button:hover{
 
 #submit{
     background-color: hsl(25, 97%, 53%);
+    border-radius: 50px;
+    width: 85%;
+    height: 40px;
+    display: block;
+    margin: auto;
 }
 
 #submit:hover{
@@ -65,4 +94,17 @@ button:hover{
 
 #thankYouState{
     display: none;
+    text-align: center;
+}
+
+#rateState, #thankYouState{
+    border-radius: 15px;
+    width: 20em;
+    padding: 20px;
+}
+
+@media (min-width: 70em){
+    #rateState, #thankYouState{
+        border-radius: 25px;
+    }
 }

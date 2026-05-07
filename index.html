@@ -15,18 +15,20 @@
 <body>
   <main>
     <section id="rateState">
-      <img src="./images/icon-star.svg" alt="star icon"/>
+      <img src="./images/icon-star.svg" id="star" alt="star icon"/>
       <form onsubmit="showThankYouMessage(event)">
         <header>
           <h1>How did we do?</h1>
           <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
         </header>
-        <button id="one" type="button" onclick="changeRating(this.id)">1</button>
-        <button id="two" type="button" onclick="changeRating(this.id)">2</button>
-        <button id="three" type="button" onclick="changeRating(this.id)">3</button>
-        <button id="four" type="button" onclick="changeRating(this.id)">4</button>
-        <button id="five" type="button" onclick="changeRating(this.id)">5</button>
-        <button id="submit" type="submit">Submit</button>
+        <section id="buttons">
+          <button id="one" type="button" onclick="changeRating(this.id)">1</button>
+          <button id="two" type="button" onclick="changeRating(this.id)">2</button>
+          <button id="three" type="button" onclick="changeRating(this.id)">3</button>
+          <button id="four" type="button" onclick="changeRating(this.id)">4</button>
+          <button id="five" type="button" onclick="changeRating(this.id)">5</button>
+        </section>
+        <button id="submit" type="submit">SUBMIT</button>
       </form>
     </section>
   <section id="thankYouState">
