@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -15,10 +15,9 @@
 <body>
   <main>
     <section id="rateState">
-      <!--<img src="./images/icon-star.svg" id="star" alt="star icon"/>-->
-      <svg width="45" height="45" xmlns="http://www.w3.org/2000/svg">
+      <svg width="45" height="45" xmlns="http://www.w3.org/2000/svg" aria-label="Star">
         <circle r="20" cx="20" cy="20" fill="hsl(215, 14%, 34%)"/>
-        <image x="10" y="10" width="20" height="20" href="./images/icon-star.svg"/>
+        <image x="10" y="10" width="20" height="20" href="./images/icon-star.svg" alt=""/>
       </svg>
       <form onsubmit="showThankYouMessage(event)">
         <header>
@@ -32,7 +31,7 @@
           <button id="four" type="button" onclick="changeRating(this.id)">4</button>
           <button id="five" type="button" onclick="changeRating(this.id)">5</button>
         </section>
-        <button id="submit" type="submit">SUBMIT</button>
+        <button id="submit" type="submit" aria-label="Submit">SUBMIT</button>
       </form>
     </section>
   <section id="thankYouState">
