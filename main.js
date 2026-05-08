@@ -29,8 +29,7 @@ function showThankYouMessage(){
     if(rating !== 0){
         document.getElementById("rateState").style.display = "none";
         document.getElementById("thankYouState").style.display = "block";
-        document.getElementById("userRating").textContent = "" + rating;
-        
+        document.getElementById("userRating").textContent = "" + rating; 
     }
     event.preventDefault();
 }

@@ -25,24 +25,25 @@
           <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
         </header>
         <section id="buttons">
-          <button id="one" type="button" onclick="changeRating(this.id)">1</button>
-          <button id="two" type="button" onclick="changeRating(this.id)">2</button>
-          <button id="three" type="button" onclick="changeRating(this.id)">3</button>
-          <button id="four" type="button" onclick="changeRating(this.id)">4</button>
-          <button id="five" type="button" onclick="changeRating(this.id)">5</button>
+          <button id="one" type="button" aria-label="One" onclick="changeRating(this.id)">1</button>
+          <button id="two" type="button" aria-label="Two" onclick="changeRating(this.id)">2</button>
+          <button id="three" type="button" aria-label="Three" onclick="changeRating(this.id)">3</button>
+          <button id="four" type="button" aria-label="Four" onclick="changeRating(this.id)">4</button>
+          <button id="five" type="button" aria-label="Five" onclick="changeRating(this.id)">5</button>
         </section>
         <button id="submit" type="submit" aria-label="Submit">SUBMIT</button>
       </form>
     </section>
-  <section id="thankYouState">
-    <img src="./images/illustration-thank-you.svg" alt="thank you"/>
-    <p id="selected">You selected <span id="userRating"></span> out of 5</p>
-    <header>
-      <h1>Thank you!</h1>
-      <p>We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!</p>
-    </header>
-  </section>
+
+    <section id="thankYouState">
+      <img src="./images/illustration-thank-you.svg" alt="thank you"/>
+      <p id="selected">You selected <span id="userRating"></span> out of 5</p>
+      <header>
+        <h1>Thank you!</h1>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!</p>
+      </header>
+    </section>
   </main>
   
 </body>
