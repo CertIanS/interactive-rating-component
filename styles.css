@@ -95,6 +95,12 @@ svg{
     background-color: hsl(0, 100%, 100%);
 }
 
+#errorMessage{
+    margin: 0;
+    text-align: center;
+    color: hsl(25, 97%, 53%);
+}
+
 #rateState{
     display: block;
 }

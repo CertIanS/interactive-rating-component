@@ -5,7 +5,7 @@ function changeRating(id){
     buttonIds.forEach(bId => {
         document.getElementById(bId).disabled = false;
     });
-
+    document.getElementById("errorMessage").textContent = "";
     document.getElementById(id).disabled = true;
     switch(id){
         case "one":
@@ -26,7 +26,9 @@ function changeRating(id){
 }
 
 function showThankYouMessage(){
-    if(rating !== 0){
+    if(rating === 0){
+        document.getElementById("errorMessage").textContent = "Please select a rating";
+    }else{
         document.getElementById("rateState").style.display = "none";
         document.getElementById("thankYouState").style.display = "block";
         document.getElementById("userRating").textContent = "" + rating; 
